@@ -9,7 +9,7 @@ const Posts = require('../posts/posts-model')
 
 const router = express.Router();
 
-router.get('/', logger, async (req, res) => {
+router.get('/',  async (req, res) => {
   // RETURN AN ARRAY WITH ALL THE USERS
   try{
     const users = await Users.get()
